@@ -29,7 +29,7 @@ const ExerciseForm = ({ onChange, onSubmit, form }) => (
         <input
           type="text"
           className="form-control"
-          placeholder="img"
+          placeholder="Enter a image link"
           name="img"
           onChange={onChange}
           value={form.img}
@@ -41,7 +41,7 @@ const ExerciseForm = ({ onChange, onSubmit, form }) => (
           <input
             type="text"
             className="form-control"
-            placeholder="leftColor"
+            placeholder="Example: #FF512F"
             name="leftColor"
             onChange={onChange}
             value={form.leftColor}
@@ -52,7 +52,7 @@ const ExerciseForm = ({ onChange, onSubmit, form }) => (
           <input
             type="text"
             className="form-control"
-            placeholder="rightColor"
+            placeholder="Example: #FF512F"
             name="rightColor"
             onChange={onChange}
             value={form.rightColor}
