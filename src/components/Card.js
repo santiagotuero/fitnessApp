@@ -8,9 +8,8 @@ const Card = ({ title, description, img, leftColor, rightColor }) => (
   <div
     className="card mx-auto fitness-card"
     style={{
-      backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${
-        leftColor || "#56CCF2"
-      }  , ${rightColor || "#2F80ED"}) `,
+      backgroundImage: `url(${circlesImg}), 
+      linear-gradient(to right, ${leftColor || "#56CCF2"}  , ${rightColor || "#2F80ED"})`,
     }}
   >
     <div className="card-body">

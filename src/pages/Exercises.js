@@ -5,6 +5,7 @@ import ExerciseList from "../components/ExerciseList";
 import Welcome from "../components/Welcome";
 import Loading from "../components/Loading";
 import FatalError from "./500";
+import Footer from "../components/Footer";
 
 class Exercises extends React.Component {
   state = {
@@ -43,6 +44,7 @@ class Exercises extends React.Component {
         <Welcome userName="Santiago" />
         <ExerciseList exercises={this.state.data} />
         <AddButton />
+        <Footer />
       </React.Fragment>
     );
   }

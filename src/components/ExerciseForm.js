@@ -7,20 +7,22 @@ const ExerciseForm = ({ onChange, onSubmit, form }) => (
         <input
           type="text"
           className="form-control"
-          placeholder="title"
+          placeholder="Enter a title"
           name="title"
           onChange={onChange}
           value={form.title}
+          required
         />
       </div>
       <div className="form-group">
         <input
           type="text"
           className="form-control"
-          placeholder="description"
+          placeholder="Enter a description"
           name="description"
           onChange={onChange}
           value={form.description}
+          required
         />
       </div>
       <div className="form-group">
@@ -31,6 +33,7 @@ const ExerciseForm = ({ onChange, onSubmit, form }) => (
           name="img"
           onChange={onChange}
           value={form.img}
+          required
         />
       </div>
       <div className="form-row">
@@ -42,6 +45,7 @@ const ExerciseForm = ({ onChange, onSubmit, form }) => (
             name="leftColor"
             onChange={onChange}
             value={form.leftColor}
+            required
           />
         </div>
         <div className="col">
@@ -52,11 +56,14 @@ const ExerciseForm = ({ onChange, onSubmit, form }) => (
             name="rightColor"
             onChange={onChange}
             value={form.rightColor}
+            required
           />
         </div>
       </div>
-
-      <button type="submit" className="btn btn-primary float-right button-submit">
+      <button
+        type="submit"
+        className="btn btn-primary float-right button-submit"
+      >
         Submit
       </button>
     </form>
