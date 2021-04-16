@@ -1,3 +1,9 @@
-.page-footer{
+.footer, .footer-2 {
     background: linear-gradient(#1488CC 24%, #2B32B2);
+}
+
+.footer-2 {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }

@@ -1,12 +1,9 @@
 import React from "react";
-import "../components/styles/Footer.css";
 
-
-
-const Footer = () => {
+const Footer = ({ className }) => {
   return (
-    <footer className="page-footer">
-      <div className="text-center p-3 text-light">Made by ❤ Santiago Tuero</div>
+    <footer className={className}>
+      <div className="text-center p-3 text-light">Made with ❤ by Santiago Tuero</div>
     </footer>
   );
 };

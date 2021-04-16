@@ -1,3 +1,5 @@
+import "../components/styles/Footer.css";
+
 import React from "react";
 
 import AddButton from "../components/AddButton";
@@ -40,12 +42,12 @@ class Exercises extends React.Component {
     if (this.state.error) return <FatalError />;
 
     return (
-      <React.Fragment>
-        <Welcome userName="Santiago" />
+      <>
+        <Welcome />
         <ExerciseList exercises={this.state.data} />
         <AddButton />
-        <Footer />
-      </React.Fragment>
+        <Footer className="footer" />
+      </>
     );
   }
 }

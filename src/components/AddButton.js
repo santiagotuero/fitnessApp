@@ -6,9 +6,14 @@ import { Link } from "react-router-dom";
 
 const AddButton = () => {
   return (
-    <Link to="/exercise/new">
-      <img src={buttonImg} alt="button" className="fitness-add" />
-    </Link>
+    <div className="container">
+      <Link to="/exercise/new">
+        <div className="flex-column align-items-center">
+          <img src={buttonImg} alt="button" className="add-image" />
+          <h6 className="text-center">Add excercise</h6>
+        </div>
+      </Link>
+    </div>
   );
 };
 
