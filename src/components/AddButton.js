@@ -10,7 +10,7 @@ const AddButton = () => {
       <Link to="/exercise/new">
         <div className="flex-column align-items-center">
           <img src={buttonImg} alt="button" className="add-image" />
-          <h6 className="text-center">Add excercise</h6>
+          <h6 className="text-center">Add Exercise!</h6>
         </div>
       </Link>
     </div>
